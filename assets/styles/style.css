@@ -35,16 +35,8 @@ header{
   text-transform: capitalize;
 }
 
-.navbar{
+.navbar-nav{
   font-size: large;
-  flex-flow: row wrap;
-  -webkit-box-align: center;
-  align-items: center;
-  background: transparent;
-  padding: 0px 3.5rem;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  z-index: 2000;
+  display: flex;
+ align-items: center;
 }
