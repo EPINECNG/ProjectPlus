@@ -40,3 +40,7 @@ header{
   display: flex;
  align-items: center;
 }
+
+.navbar-nav.ms-auto {
+  margin-left: auto;
+}
