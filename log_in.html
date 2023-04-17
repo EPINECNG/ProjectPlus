@@ -5,60 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProjectPlus</title>
-    <link rel="stylesheet" href="/styles/log_in.css">
+    <link rel="stylesheet" href="/assets/styles/log_in.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
     <section class="login_bg">
-        <div class="container py-5 h-100">
+        <div class="container py-5 h-90">
             <div class="row d-flex justify-content-center align-items-center h-100">
               <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                <div class="card bg-light text-dark w-75 h-100" style="border-radius: 1rem;">
+                <div class="card bg-light text-dark w-78" style="border-radius: 1rem;">
                   <div class="card-body p-2 text-center">
         
                     <div class="mb-md-5 mt-md-5 pb-5">
-                        <!-- <div>
-                            <i class="fas fa-gem mb-3 text-secondary"><img src="assets/img/shield_force_exp_main.png" style="width: 200px
+                        <div>
+                            <i class="fas fa-gem mb-3 text-secondary"><img src="..." style="width: 200px
                                 ;"alt=""></i>
-                        </div> -->
+                        </div>
                        
                         <!-- <h3 class="fw-bold mb-2 text-uppercase">Welcome!</h3> -->
                         <!-- <p class="text-dark-50 mb-5">Continue Here To Log in</p> -->
-            
-                        <div class="form-outline form-white mt-4 mb-4">
-                            <input id="inputEmail" type="email" placeholder="Email address" required="" autofocus="" class="form-control pill border-0 shadow-sm px-4">
+    
+                        <div class="container-mail my-5 mx-5">
+                          <div class="form-outline form-white col-md-5 mt-2 mb-4">
+                              <input id="inputEmail" type="email" placeholder="Email" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                          </div>
                         </div>
             
-                        <div class="form-outline form-white mb-4">
-                            <input id="inputPassword" type="password" placeholder="Password" required="" class="form-control pill border-0 shadow-sm px-4 text-primary">
+                        <div class="password-container form-outline form-white mx-5 mb-4">
+                            <input id="inputPassword" type="password" placeholder="Password" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-reset">
+                            <i class="fa-solid fa-eye" id="eye"></i>
                         </div>
-
-                        <button class="btn btn-outline-primary btn-lg px-5 mb-4" type="submit" href="index.html">Login</button>
+    
+                        <button class="btn btn-outline-primary btn-lg px-5 mb-4" type="submit" href="...">Sign Up</button>
             
-                        <p class="small mb-3"><a class="text-dark-50" href="forgot-passwd.html">Forgot password?</a></p>
+                        <p class="small mb-3"><a class="text-dark-50 text-reset" href="forgot-passwd.html">Forgot password?</a></p>
             
-                        <!-- <div class="d-flex justify-content-center text-center mt-2 pt-1">
-                            <a class="btn btn-link btn-floating btn-lg" role="button" href="#!" class="text-dark"><i class="ri-google-fill"></i></a>
-                            <a class="btn btn-link btn-floating btn-lg" href="#!" role="button" class="text-dark"><i class="ri-microsoft-fill"></i></a>
-                            <a class="btn btn-link btn-floating btn-lg" role="button" href="#!" class="text-dark"><i class="ri-linkedin-fill"></i></a>
-                        </div> -->   
+                        <div class="d-flex justify-content-center text-center mb-1 pt-1">
+                            <!-- <a href="#!" class="text-dark"><i class="ri-facebook-fill lg"></i></a> -->
+                            <a class="btn btn-link btn-floating btn-lg text-dark m-1 text-decoration-none text-reset" role="button" href="#!" class="text-dark"><i class="ri-google-fill"></i></a>
+    
+                            <a class="btn btn-link btn-floating btn-lg text-dark m-1 text-decoration-none" href="#!" role="button" class="text-dark"><i class="ri-microsoft-fill"></i></a>
+    
+                            <!--<a class="btn btn-link btn-floating btn-lg text-dark m-1 text-decoration-none" role="button" href="#!" class="text-dark"><i class="ri-linkedin-fill"></i></a>-->
+                        </div>
             
-                        <!-- <div>
-                        <p class="mb-0">Don't have an account? <a href="#!" class="text-dark-50 fw-bold">Sign Up</a>
+                        </div>
+            
+                        <div class="">
+                        <p class="mb-0">Don't have an account? <a href="sign_up.html" class="text-dark-50 fw-bold text-reset">Sign Up</a>
                         </p>
-                        </div> -->
+                        </div>
             
                   </div>
                 </div>
               </div>
             </div>
-        </div>
-
-    </section>
+          </div>
+      </section>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>
