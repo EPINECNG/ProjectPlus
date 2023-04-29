@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProjectPlus</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/styles/user_dboard.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -45,7 +46,7 @@
         </div>
       </nav>
 
-      <section class="row row-cols-1 row-cols-md-2 g-4 ms-5 me-6 my-5">
+      <section class="row row-cols-1 row-cols-md-3 g-4 ms-5 me-6 my-5">
         <div class="col">
           <div class="card text-bg-info mb-3" style="max-width: 18rem;">
             <div class="card-header">Header</div>
@@ -81,8 +82,165 @@
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
-        </div>  
+        </div>
+        <div class="col">
+          <div id="graph-widget"></div>
+        </div>
       </section>
+
+      <div class="container">
+        <h2>Recently Viewed Images</h2>
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="/assets/img/test_img.jpg" class="card-img-top" alt="Image 1">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/img/test_img.jpg" class="card-img-top" alt="Image 2">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/img/test_img.jpg" class="card-img-top" alt="Image 3">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/img/test_img.jpg" class="card-img-top" alt="Image 4">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/img/test_img.jpg" class="card-img-top" alt="Image 5">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--footer-->
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-secondary"><img src="" style="width: 200px
+                  ;"alt=""></i>
+              </h6>
+              <p>
+                ProjectPlus is a service that aims at helping you maintain your critical infrastructure. 
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                </h6>
+                <p>
+                  <a href="index.html" class="text-decoration-none text-reset">Home</a>
+                </p>
+                <p>
+                  <a href="#" class="text-decoration-none text-reset">About Us</a>
+                </p>
+                <p>
+                  <a href="#" class="text-decoration-none text-reset">Pricing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-decoration-none text-reset">Contact Us</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Reach Out!</h6>
+              <p><i class="ri-home-4-line"></i> 1309 Coffeen Avenue,
+                STE 1200, Sheridan,
+                Wyoming,United States, 82801</p>
+              <p>
+                <i class="ri-mail-line"></i>
+                
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <section class="text-center">
+        <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1 text-decoration-none"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="ri-facebook-fill"></i></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1 text-decoration-none"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="ri-twitter-fill"></i></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1 text-decoration-none"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="ri-google-fill"></i></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1 text-decoration-none"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="ri-instagram-fill"></i></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1 text-decoration-none"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="ri-linkedin-fill"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+      </section>
+      <section class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.3);">
+          © 2023 Copyright:
+          <a class="text-dark text-decoration-none text-reset" href=""></a>
+        </div>
+          <!-- Copyright -->
+      </section>
+    </footer>
+<!--footer-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js" integrity="sha512-v3ygConQmvH0QehvQa6gSvTE2VdBZ6wkLOlmK7Mcy2mZ0ZF9saNbbk19QeaoTHdWIEiTlWmrwAL4hS8ElnGFbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/user_dboard.js"></script>
 </body>
 </html>
