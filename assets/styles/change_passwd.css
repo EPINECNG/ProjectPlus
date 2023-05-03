@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 
-.forgot_passwd_bg{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url(/assets/img/forgot_passwd.jpg);
+.change_passwd_bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url(/assets/img/change_passwd.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;

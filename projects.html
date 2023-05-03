@@ -7,6 +7,7 @@
     <title>ProjectPlus</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/styles/user_dboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -18,10 +19,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                <a class="nav-link active" aria-current="page" href="user_dashboard.html">Dashboard</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Projects</a>
+                <a class="nav-link active" href="projects.html">Projects</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,7 +45,26 @@
         </div>
     </nav>
     <section>
-        <div class="mx-auto mt-5">
+      <div class="row row-cols-1">
+        <div class="card mt-3 mx-5" style="width: 15rem;">
+          <div class="card-body">
+            <i class="ri-add-circle-line"></i><a href="project_query.html" class="text-decoration-none text-reset">Create Project</a>.
+          </div>
+        </div>
+
+        <div class="card mt-3 mx-5" style="width: 15rem;">
+          <div class="card-body">
+            <i class="ri-add-circle-line"></i><a href="" class="text-decoration-none text-reset">Edit Project</a>.
+          </div>
+        </div>
+
+        <div class="card mt-3 mx-5" style="width: 15rem;">
+          <div class="card-body">
+            <i class="ri-add-circle-line"></i><a href="" class="text-decoration-none text-reset">Delete Project</a>.
+          </div>
+        </div>
+      </div>
+        <div class="mx-auto mt-3">
             <table class="table table-bordered table-striped table-hover">
                 <thead>
                   <tr>
