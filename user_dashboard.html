@@ -7,6 +7,9 @@
     <title>ProjectPlus</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/styles/user_dboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -44,7 +47,79 @@
         </div>
       </nav>
 
-      
+      <div class="container">
+        <div class="table-wrapper">
+        <div class="table-title">
+        <div class="row">
+        <div class="col-sm-8"><h2>Employee <b>Details</b></h2></div>
+        <div class="col-sm-4">
+        <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
+        </div>
+        </div>
+        </div>
+        <table class="table table-bordered">
+        <thead>
+        <tr>
+        <th>Project Name</th>
+        <th>Project Date</th>
+        <th>Project Description</th>
+        <th>Project Manager</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+        <th>Project Budget</th>
+        <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>Eko Bridge</td>
+        <td>2008-02-10</td>
+        <td>Rivulet maintenance</td>
+        <td>John Doe</td>
+        <td>23°08′N</td>
+        <td>82°23′W</td>
+        <td>$1,200,000</td>
+        <td>
+        <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+        <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+        <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+        <a class="img" title="View Sat Image" data-bs-toggle="tooltip"><i class="material-icons">&#xe8a7;</i></a>
+        </td>
+        </tr>
+        <tr>
+        <td>Niger Bridge</td>
+        <td>2008-04-20</td>
+        <td>Rivulet maintenance</td>
+        <td>Peter Parker</td>
+        <td>15°48′S</td>
+        <td>47°52′W</td>
+        <td>$2,500,000</td>
+        <td>
+        <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+        <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+        <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+        <a class="img" title="View Sat Image" data-bs-toggle="tooltip"><i class="material-icons">&#xe8a7;</i></a>
+        </td>
+        </tr>
+        <tr>
+        <td>Kanji Dam</td>
+        <td>2008-07-15</td>
+        <td>Water turbine installation</td>
+        <td>Fran Wilson</td>
+        <td>42°28′N</td>
+        <td>59°36′E</td>
+        <td>$10,000,000</td>
+        <td>
+        <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+        <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+        <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+        <a class="img" title="View Sat Image" data-bs-toggle="tooltip"><i class="material-icons">&#xe8a7;</i></a>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
       
       <!--footer-->
     <footer class="text-center text-lg-start bg-white text-muted">
@@ -57,8 +132,7 @@
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
               <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3 text-secondary"><img src="" style="width: 200px
-                  ;"alt=""></i>
+                <i class="fas fa-gem me-3 text-secondary"> <a href="index.html"><img src="/assets/img/PROJECT PLUS.png" style="width: 200px;"alt=""></a></i>
               </h6>
               <p>
                 ProjectPlus is a service that aims at helping you maintain your critical infrastructure. 
@@ -76,7 +150,7 @@
                   <a href="index.html" class="text-decoration-none text-reset">Home</a>
                 </p>
                 <p>
-                  <a href="#" class="text-decoration-none text-reset">About Us</a>
+                  <a href="about.html" class="text-decoration-none text-reset">About Us</a>
                 </p>
                 <p>
                   <a href="#" class="text-decoration-none text-reset">Pricing</a>
@@ -168,6 +242,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js" integrity="sha512-v3ygConQmvH0QehvQa6gSvTE2VdBZ6wkLOlmK7Mcy2mZ0ZF9saNbbk19QeaoTHdWIEiTlWmrwAL4hS8ElnGFbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/assets/js/user_dboard.js"></script>
 </body>
 </html>

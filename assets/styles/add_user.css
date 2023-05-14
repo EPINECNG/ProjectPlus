@@ -6,13 +6,26 @@
     box-sizing: border-box;
 }
 
-.query_bg{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/img/query_form.jpg);
+.login_bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/img/sign_up_img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-.form-group{
-    width: 500px;
+.fa-eye{
+    position: absolute;
+    top: 28%;
+    right: 4%;
+    cursor: pointer;
+    color: darkgray;
+  }
+
+.password-container{
+    width: 300px;
+    position: relative;
+}
+
+.container-mail{
+    width: 700px;
 }

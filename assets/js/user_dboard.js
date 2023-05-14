@@ -1,33 +1,56 @@
-function createGraphWidget() {
-    var ctx = document.getElementById('graph-widget').getContext('2d');
-    var myChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        datasets: [{
-          label: 'Dataset 1',
-          data: [0, 10, 5, 2, 20, 30, 45],
-          borderColor: 'rgb(255, 99, 132)',
-          borderWidth: 2
-        }, {
-          label: 'Dataset 2',
-          data: [10, 20, 15, 12, 30, 40, 55],
-          borderColor: 'rgb(54, 162, 235)',
-          borderWidth: 2
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+  var actions = $("table td:last-child").html();
+  // Append table with add row form on add new button click
+  $(".add-new").click(function(){
+  $(this).attr("disabled", "disabled");
+  var index = $("table tbody tr:last-child").index();
+  var row = '<tr>' +
+  '<td><input type="text" class="form-control" id="project-name" name="project-name"></td>' +
+  '<td><input type="number" class="form-control" name="project-date" id="project-date"></td>' + 
+  '<td><input type="text" class="form-control" id="project-description" name="project-description"></td>' + 
+  '<td><input type="text" class="form-control" id="project-manager" name="project-manager"></td>' +
+  '<td><input type="number" class="form-control" id="latitude" name="latitude" required></td>' +
+  '<td><input type="number" class="form-control" id="longitude" name="longitude"></input></td>' +
+  '<td><input type="text" class="form-control" name="project-budget" id="project-budget"></td>' +
+  '<td>' + actions + '</td>' +
+  '</tr>';
+  $("table").append(row);
+  $("table tbody tr").eq(index + 1).find(".add, .edit").toggle();
+  $('[data-toggle="tooltip"]').tooltip();
+  });
+  // Add row on add button click
+  $(document).on("click", ".add", function(){
+  var empty = false;
+  var input = $(this).parents("tr").find('input[type="text, number"]');
+  input.each(function(){
+  if(!$(this).val()){
+  $(this).addClass("error");
+  empty = true;
+  } else{
+  $(this).removeClass("error");
   }
-
-window.addEventListener('load', function() {
-    createGraphWidget();
+  });
+  $(this).parents("tr").find(".error").first().focus();
+  if(!empty){
+  input.each(function(){
+  $(this).parent("td").html($(this).val());
+  });
+  $(this).parents("tr").find(".add, .edit").toggle();
+  $(".add-new").removeAttr("disabled");
+  }
+  });
+  // Edit row on edit button click
+  $(document).on("click", ".edit", function(){
+  $(this).parents("tr").find("td:not(:last-child)").each(function(){
+  $(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
+  });
+  $(this).parents("tr").find(".add, .edit").toggle();
+  $(".add-new").attr("disabled", "disabled");
+  });
+  // Delete row on delete button click
+  $(document).on("click", ".delete", function(){
+  $(this).parents("tr").remove();
+  $(".add-new").removeAttr("disabled");
+  });
   });
